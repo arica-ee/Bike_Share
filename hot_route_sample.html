@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3fb606bb285d5426d3bf9f95ed2e5fd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3fb606bb285d5426d3bf9f95ed2e5fd4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3fb606bb285d5426d3bf9f95ed2e5fd4 = L.map(
+                "map_3fb606bb285d5426d3bf9f95ed2e5fd4",
+                {
+                    center: [37.59, -122.22],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+
+            
+
+        
+    
+            var tile_layer_06fcaef70c93f71e18b57e82c19ca52a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_06fcaef70c93f71e18b57e82c19ca52a.addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            var circle_marker_223bfe8144409118cdc68ea06352c1cf = L.circleMarker(
+                [37.329732, -121.901782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.03, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_223bfe8144409118cdc68ea06352c1cf.bindTooltip(
+                `<div>
+                     2  San Jose Diridon Caltrain Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0611b418036df5bdd7a846822222075b = L.circleMarker(
+                [37.330698, -121.888979],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.11, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_0611b418036df5bdd7a846822222075b.bindTooltip(
+                `<div>
+                     3  San Jose Civic Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e14b118917c41f5db7a191f8f8500c1 = L.circleMarker(
+                [37.333988, -121.894902],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.654, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_6e14b118917c41f5db7a191f8f8500c1.bindTooltip(
+                `<div>
+                     4  Santa Clara at Almaden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a422723c23b93105cdffa81ee938d3d1 = L.circleMarker(
+                [37.331415, -121.8932],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.498, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_a422723c23b93105cdffa81ee938d3d1.bindTooltip(
+                `<div>
+                     5  Adobe on Almaden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b65f947da0f9e168ea292adc2a62046 = L.circleMarker(
+                [37.336721, -121.894074],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.808, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_0b65f947da0f9e168ea292adc2a62046.bindTooltip(
+                `<div>
+                     6  San Pedro Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d732135f18c2ec9a90c5adfd593bc82 = L.circleMarker(
+                [37.333798, -121.886943],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.424, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_7d732135f18c2ec9a90c5adfd593bc82.bindTooltip(
+                `<div>
+                     7  Paseo de San Antonio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7847d80e4b1de2a74f2779f3156654ee = L.circleMarker(
+                [37.330165, -121.885831],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.344, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_7847d80e4b1de2a74f2779f3156654ee.bindTooltip(
+                `<div>
+                     8  San Salvador at 1st
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66f3b50fa86353628f95a0252ef29da9 = L.circleMarker(
+                [37.348742, -121.894715],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.77, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_66f3b50fa86353628f95a0252ef29da9.bindTooltip(
+                `<div>
+                     9  Japantown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e176001ee30ce4bbe15634f074747ec2 = L.circleMarker(
+                [37.337391, -121.886995],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.742, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_e176001ee30ce4bbe15634f074747ec2.bindTooltip(
+                `<div>
+                     10  San Jose City Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c66b33d1a40e959abb571e9acf8016b = L.circleMarker(
+                [37.335885, -121.88566000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.998, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_1c66b33d1a40e959abb571e9acf8016b.bindTooltip(
+                `<div>
+                     11  MLK Library
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec32ede5072759a94daa14f084dc6de3 = L.circleMarker(
+                [37.332808, -121.883891],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.302, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_ec32ede5072759a94daa14f084dc6de3.bindTooltip(
+                `<div>
+                     12  SJSU 4th at San Carlos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a0afb9fbb1d313d35b0ca9db5129ef1 = L.circleMarker(
+                [37.339301, -121.88993700000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.344, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_3a0afb9fbb1d313d35b0ca9db5129ef1.bindTooltip(
+                `<div>
+                     13  St James Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbb1106a779677ad629603c915b73f5a = L.circleMarker(
+                [37.332692, -121.900084],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.95, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_dbb1106a779677ad629603c915b73f5a.bindTooltip(
+                `<div>
+                     14  Arena Green / SAP Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa16b76f653613d2f767363c76d381a4 = L.circleMarker(
+                [37.333955, -121.877349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.92, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_fa16b76f653613d2f767363c76d381a4.bindTooltip(
+                `<div>
+                     16  SJSU - San Salvador at 9th
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2738d679e723c5e8a4fb6e9f4ac53497 = L.circleMarker(
+                [37.481758, -122.226904],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.434, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_2738d679e723c5e8a4fb6e9f4ac53497.bindTooltip(
+                `<div>
+                     21  Franklin at Maple
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a6b3c49a801f481b9adc64d1526352a = L.circleMarker(
+                [37.486078000000006, -122.232089],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.018, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_4a6b3c49a801f481b9adc64d1526352a.bindTooltip(
+                `<div>
+                     22  Redwood City Caltrain Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39609acdb3cd7b2ba9cd8e419ffd4a86 = L.circleMarker(
+                [37.487616, -122.229951],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.558, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_39609acdb3cd7b2ba9cd8e419ffd4a86.bindTooltip(
+                `<div>
+                     23  San Mateo County Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2964c394061192c8b1c916b85e57380f = L.circleMarker(
+                [37.484219, -122.227424],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.402, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_2964c394061192c8b1c916b85e57380f.bindTooltip(
+                `<div>
+                     24  Redwood City Public Library
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c6665a7998ef63ddc52cee054c25730 = L.circleMarker(
+                [37.48537, -122.203288],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_1c6665a7998ef63ddc52cee054c25730.bindTooltip(
+                `<div>
+                     25  Stanford in Redwood City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbbf869e95822d3916363eacdd0ec92d = L.circleMarker(
+                [37.487682, -122.223492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.606, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_bbbf869e95822d3916363eacdd0ec92d.bindTooltip(
+                `<div>
+                     26  Redwood City Medical Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c5dda4b7b536a4adaaf18a0aa450712 = L.circleMarker(
+                [37.389218, -122.081896],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.878, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_6c5dda4b7b536a4adaaf18a0aa450712.bindTooltip(
+                `<div>
+                     27  Mountain View City Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13e8e96d7fa03a8168866b5fa831a954 = L.circleMarker(
+                [37.394358, -122.07671299999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.89, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_13e8e96d7fa03a8168866b5fa831a954.bindTooltip(
+                `<div>
+                     28  Mountain View Caltrain Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4cb199cee52c8aa5034b3aab27ea0cf = L.circleMarker(
+                [37.406940000000006, -122.106758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.87, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_a4cb199cee52c8aa5034b3aab27ea0cf.bindTooltip(
+                `<div>
+                     29  San Antonio Caltrain Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_184af35c132a09a1f660ac370f25d9c5 = L.circleMarker(
+                [37.390277000000005, -122.066553],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.31, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_184af35c132a09a1f660ac370f25d9c5.bindTooltip(
+                `<div>
+                     30  Evelyn Park and Ride
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d27713911fc7de4202dfead90723ed53 = L.circleMarker(
+                [37.400443, -122.108338],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_d27713911fc7de4202dfead90723ed53.bindTooltip(
+                `<div>
+                     31  San Antonio Shopping Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ab45f8f1eda320479326866d8acea6b = L.circleMarker(
+                [37.385956, -122.083678],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_2ab45f8f1eda320479326866d8acea6b.bindTooltip(
+                `<div>
+                     32  Castro Street and El Camino Real
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_568963f21cea3d973d97b438bc4de127 = L.circleMarker(
+                [37.400241, -122.099076],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.19, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_568963f21cea3d973d97b438bc4de127.bindTooltip(
+                `<div>
+                     33  Rengstorff Avenue / California Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_923754c295d9a48e4ec6ceab76fd9d81 = L.circleMarker(
+                [37.443988, -122.164759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.092, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_923754c295d9a48e4ec6ceab76fd9d81.bindTooltip(
+                `<div>
+                     34  Palo Alto Caltrain Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ede999c947408c4a46965fd4cad693b = L.circleMarker(
+                [37.444521, -122.163093],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.88, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_5ede999c947408c4a46965fd4cad693b.bindTooltip(
+                `<div>
+                     35  University and Emerson
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_459b8544cb882362fb3a79ffeb48c3ec = L.circleMarker(
+                [37.429082, -122.142805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.962, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_459b8544cb882362fb3a79ffeb48c3ec.bindTooltip(
+                `<div>
+                     36  California Ave Caltrain Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79b5927955f6bcf3aad1808bcfa1e1f2 = L.circleMarker(
+                [37.448598, -122.159504],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.698, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_79b5927955f6bcf3aad1808bcfa1e1f2.bindTooltip(
+                `<div>
+                     37  Cowper at University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a0bd5df15ff78e3e2100241f36cac56 = L.circleMarker(
+                [37.4256839, -122.13777749999998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.438, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_0a0bd5df15ff78e3e2100241f36cac56.bindTooltip(
+                `<div>
+                     38  Park at Olive
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e770fc0c91c28974a4510c35919fa7f4 = L.circleMarker(
+                [37.795001, -122.39997],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.074, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_e770fc0c91c28974a4510c35919fa7f4.bindTooltip(
+                `<div>
+                     41  Clay at Battery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24038a72feb8c7decbd8b5cbf2a9ca30 = L.circleMarker(
+                [37.79728, -122.398436],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.848, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_24038a72feb8c7decbd8b5cbf2a9ca30.bindTooltip(
+                `<div>
+                     42  Davis at Jackson
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a5bdcff86289f2630c136a5143dd05c = L.circleMarker(
+                [37.794231, -122.402923],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.796, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_4a5bdcff86289f2630c136a5143dd05c.bindTooltip(
+                `<div>
+                     45  Commercial at Montgomery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_560aac5a78ca0b521d54bb0733c7fa11 = L.circleMarker(
+                [37.795425, -122.404767],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.652, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_560aac5a78ca0b521d54bb0733c7fa11.bindTooltip(
+                `<div>
+                     46  Washington at Kearney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa23479d4ad85f8676bc66d5fd309c03 = L.circleMarker(
+                [37.788975, -122.403452],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.26, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_fa23479d4ad85f8676bc66d5fd309c03.bindTooltip(
+                `<div>
+                     47  Post at Kearney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23d238fc22341ecada3f98221d3917f8 = L.circleMarker(
+                [37.799953, -122.398525],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.75, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_23d238fc22341ecada3f98221d3917f8.bindTooltip(
+                `<div>
+                     48  Embarcadero at Vallejo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b7a6ed9e513e37615f69a5482b73c48 = L.circleMarker(
+                [37.790302, -122.390637],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.826, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_7b7a6ed9e513e37615f69a5482b73c48.bindTooltip(
+                `<div>
+                     49  Spear at Folsom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9015adb6b80dbe660c3e52ff73ff5c7f = L.circleMarker(
+                [37.795392, -122.394203],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.8, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_9015adb6b80dbe660c3e52ff73ff5c7f.bindTooltip(
+                `<div>
+                     50  Harry Bridges Plaza (Ferry Building)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10acf7583723d8b368d8177b3c6b1ee4 = L.circleMarker(
+                [37.791464000000005, -122.391034],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 64.928, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_10acf7583723d8b368d8177b3c6b1ee4.bindTooltip(
+                `<div>
+                     51  Embarcadero at Folsom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d609f15ff293353353d8dbb896e38347 = L.circleMarker(
+                [37.783871000000005, -122.408433],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.986, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_d609f15ff293353353d8dbb896e38347.bindTooltip(
+                `<div>
+                     39  Powell Street BART
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a875a9b3092efb0829e68d18e8e3806 = L.circleMarker(
+                [37.787152, -122.388013],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.406, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_7a875a9b3092efb0829e68d18e8e3806.bindTooltip(
+                `<div>
+                     54  Embarcadero at Bryant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a81ce5b705db8dfcba2048dc5f4d2a2a = L.circleMarker(
+                [37.789756, -122.394643],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52.064, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_a81ce5b705db8dfcba2048dc5f4d2a2a.bindTooltip(
+                `<div>
+                     55  Temporary Transbay Terminal (Howard at Beale)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5b102774119f9e4930b8db783d8783f = L.circleMarker(
+                [37.792251, -122.39708600000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.162, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_d5b102774119f9e4930b8db783d8783f.bindTooltip(
+                `<div>
+                     56  Beale at Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a1d41ea7afc3f0a88e92c26ad476578 = L.circleMarker(
+                [37.781752, -122.405127],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.84, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_0a1d41ea7afc3f0a88e92c26ad476578.bindTooltip(
+                `<div>
+                     57  5th at Howard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a77f635f8ac5fa00a54eea809c005989 = L.circleMarker(
+                [37.77865, -122.418235],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.882, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_a77f635f8ac5fa00a54eea809c005989.bindTooltip(
+                `<div>
+                     58  San Francisco City Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6581106b44efd010ccefb1085442c5e7 = L.circleMarker(
+                [37.781332, -122.418603],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.534, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_6581106b44efd010ccefb1085442c5e7.bindTooltip(
+                `<div>
+                     59  Golden Gate at Polk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e727dcd6aaf5dff4d01187b30a89d56a = L.circleMarker(
+                [37.80477, -122.403234],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 54.75, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_e727dcd6aaf5dff4d01187b30a89d56a.bindTooltip(
+                `<div>
+                     60  Embarcadero at Sansome
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3784301fec4ff51d2e4f0a43c49bf811 = L.circleMarker(
+                [37.780526, -122.39028799999998],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.488, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_3784301fec4ff51d2e4f0a43c49bf811.bindTooltip(
+                `<div>
+                     61  2nd at Townsend
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c61670ebcc07a53b8f0f1217867723cb = L.circleMarker(
+                [37.785299, -122.39623600000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.782, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_c61670ebcc07a53b8f0f1217867723cb.bindTooltip(
+                `<div>
+                     62  2nd at Folsom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf670efe8313faa421ad704db43ec6e5 = L.circleMarker(
+                [37.786978000000005, -122.398108],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.21, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_bf670efe8313faa421ad704db43ec6e5.bindTooltip(
+                `<div>
+                     63  Howard at 2nd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b4dc6b745c32e5bda9f6d3ac67fc274 = L.circleMarker(
+                [37.782259, -122.392738],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.868, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_4b4dc6b745c32e5bda9f6d3ac67fc274.bindTooltip(
+                `<div>
+                     64  2nd at South Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de3c7b09da94a1a4fe3c6dc355cfd4e1 = L.circleMarker(
+                [37.771058, -122.402717],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.34, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_de3c7b09da94a1a4fe3c6dc355cfd4e1.bindTooltip(
+                `<div>
+                     65  Townsend at 7th
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3edcb4bfb24660250b489a5c07fffef5 = L.circleMarker(
+                [37.774814, -122.418954],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.598, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_3edcb4bfb24660250b489a5c07fffef5.bindTooltip(
+                `<div>
+                     66  South Van Ness at Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1eb7486441c18b1e691e028106771389 = L.circleMarker(
+                [37.776619, -122.417385],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40.29, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_1eb7486441c18b1e691e028106771389.bindTooltip(
+                `<div>
+                     67  Market at 10th
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e984c3d61a39c954b31cc1cf674b0f73 = L.circleMarker(
+                [37.784878000000006, -122.401014],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.314, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_e984c3d61a39c954b31cc1cf674b0f73.bindTooltip(
+                `<div>
+                     68  Yerba Buena Center of the Arts (3rd @ Howard)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39e09b398477013817b1c5e4434b94f0 = L.circleMarker(
+                [37.7766, -122.39547],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 67.306, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_39e09b398477013817b1c5e4434b94f0.bindTooltip(
+                `<div>
+                     69  San Francisco Caltrain 2 (330 Townsend)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ad6a436ac5f8e18e74ed0cf328d25b4 = L.circleMarker(
+                [37.776617, -122.39526],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 97.778, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_0ad6a436ac5f8e18e74ed0cf328d25b4.bindTooltip(
+                `<div>
+                     70  San Francisco Caltrain (Townsend at 4th)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e77fb528d2f3439c9d47414d8a145d0 = L.circleMarker(
+                [37.788446, -122.408499],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.364, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_6e77fb528d2f3439c9d47414d8a145d0.bindTooltip(
+                `<div>
+                     71  Powell at Post (Union Square)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ab662a48fd210086a0ad1a21c0cff79 = L.circleMarker(
+                [37.781039, -122.411748],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.806, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_2ab662a48fd210086a0ad1a21c0cff79.bindTooltip(
+                `<div>
+                     72  Civic Center BART (7th at Market)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3382798fa6d892fdaf9878572e83610 = L.circleMarker(
+                [37.798522, -122.407245],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.234, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_c3382798fa6d892fdaf9878572e83610.bindTooltip(
+                `<div>
+                     73  Grant Avenue at Columbus Avenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40065dd833b3dbcf249ba7390725f2c4 = L.circleMarker(
+                [37.794139, -122.394434],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.344, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_40065dd833b3dbcf249ba7390725f2c4.bindTooltip(
+                `<div>
+                     74  Steuart at Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_268fb84e9cd9a9453725b67d14d3e213 = L.circleMarker(
+                [37.7913, -122.399051],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.22, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_268fb84e9cd9a9453725b67d14d3e213.bindTooltip(
+                `<div>
+                     75  Mechanics Plaza (Market at Battery)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ced56348c220e114d27a6bd32e2966e5 = L.circleMarker(
+                [37.786305, -122.404966],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.698, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_ced56348c220e114d27a6bd32e2966e5.bindTooltip(
+                `<div>
+                     76  Market at 4th
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35a4a655adedb435d3a57a045ca33bb4 = L.circleMarker(
+                [37.789625, -122.400811],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48.008, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_35a4a655adedb435d3a57a045ca33bb4.bindTooltip(
+                `<div>
+                     77  Market at Sansome
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e62682f0be5e726be0cac52f8cdabc3 = L.circleMarker(
+                [37.352601, -121.905733],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.716, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_3e62682f0be5e726be0cac52f8cdabc3.bindTooltip(
+                `<div>
+                     80  Santa Clara County Civic Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_349b9752617a626d887502ce5f64b59c = L.circleMarker(
+                [37.798541, -122.40086200000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.504, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_349b9752617a626d887502ce5f64b59c.bindTooltip(
+                `<div>
+                     82  Broadway St at Battery St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ab528a3729093f0a95624bca9d5b82c = L.circleMarker(
+                [37.491269, -122.236234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.674, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_4ab528a3729093f0a95624bca9d5b82c.bindTooltip(
+                `<div>
+                     83  Mezes Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1af98be41cc8c2b42adcd57f97047b6 = L.circleMarker(
+                [37.342725, -121.895617],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.464, "stroke": true, "weight": 3}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            circle_marker_e1af98be41cc8c2b42adcd57f97047b6.bindTooltip(
+                `<div>
+                     84  Ryland Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_55d99580435a2abc30ae2c803facc75a = L.polyline(
+                [[37.7806182, -122.3905436], [37.7812476, -122.3897575], [37.7818004, -122.3884317], [37.781769, -122.3881323], [37.7847318, -122.3878962], [37.7855294, -122.3878344], [37.7870796, -122.3877083], [37.7896449, -122.3884059], [37.7900054, -122.3888076], [37.790836, -122.3898335], [37.7909191, -122.3899224], [37.7925459, -122.390971], [37.7938324, -122.3924473], [37.794143, -122.3927947], [37.7944139, -122.39309], [37.7945194, -122.3932011], [37.7960323, -122.3946417], [37.7960197, -122.3948018], [37.7956094, -122.39474]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_55d99580435a2abc30ae2c803facc75a.bindTooltip(
+                `<div>
+                     1th popular route. 61 - 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ddb92d4dceb51b04d79b5af7c73e48c2 = L.polyline(
+                [[37.7916899, -122.3912288], [37.792, -122.3916518], [37.7923424, -122.3912179], [37.7907482, -122.3901483], [37.7894946, -122.3886184], [37.788788, -122.388213], [37.7870938, -122.3880152], [37.7847486, -122.3881985], [37.7818004, -122.3884317], [37.7812476, -122.3897575], [37.7806182, -122.3905436], [37.7801945, -122.3910808], [37.7797352, -122.3916622], [37.7792915, -122.392237], [37.7789107, -122.3927199], [37.7788654, -122.3927775], [37.7784485, -122.3933086], [37.7782417, -122.3935709], [37.7779827, -122.3939076], [37.7776753, -122.3942908], [37.7771538, -122.3949605], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_ddb92d4dceb51b04d79b5af7c73e48c2.bindTooltip(
+                `<div>
+                     2th popular route. 51 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7fc46bbc0c2a9b6d112cc793ecd6e3dd = L.polyline(
+                [[37.8048548, -122.4031918], [37.8041967, -122.4022807], [37.8039678, -122.4020251], [37.8026744, -122.4008668], [37.8008478, -122.3992608], [37.7991793, -122.3977885], [37.7971051, -122.3959475], [37.7966342, -122.395556], [37.7965718, -122.3961109], [37.7963968, -122.3969087], [37.7963522, -122.3970127], [37.7954802, -122.3968336], [37.7952708, -122.3967868], [37.7945886, -122.3966507], [37.7936638, -122.39648], [37.7932761, -122.3963597], [37.7938135, -122.3956799], [37.7944461, -122.3948315]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_7fc46bbc0c2a9b6d112cc793ecd6e3dd.bindTooltip(
+                `<div>
+                     3th popular route. 60 - 74
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8ff94f61f550d44eb30a33a7e2ceb4ee = L.polyline(
+                [[37.770331, -122.4035057], [37.7718329, -122.4016818], [37.772906, -122.4003322], [37.7736207, -122.3994254], [37.7738534, -122.3991268], [37.7742199, -122.3986663], [37.7745241, -122.398284], [37.7747937, -122.3979451], [37.7753545, -122.397239], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_8ff94f61f550d44eb30a33a7e2ceb4ee.bindTooltip(
+                `<div>
+                     4th popular route. 65 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_860922a61e5af7b352ce6bb81f1f8b13 = L.polyline(
+                [[37.7895351, -122.3947668], [37.7892316, -122.395147], [37.7885423, -122.396028], [37.788117, -122.395496], [37.7877231, -122.395005], [37.7873202, -122.394502], [37.7868664, -122.3939349], [37.7866418, -122.3936646], [37.7864394, -122.3935146], [37.7859393, -122.3931245], [37.785881, -122.3931978], [37.7857008, -122.393426], [37.7856475, -122.3934931], [37.7855792, -122.393579], [37.7855356, -122.393634], [37.7852059, -122.3940468], [37.784741, -122.3946383], [37.7846693, -122.3947257], [37.7846007, -122.3948121], [37.7845739, -122.3948457], [37.7845488, -122.3948776], [37.7845156, -122.3949199], [37.7843129, -122.395178], [37.7838907, -122.395714], [37.7837428, -122.3959014], [37.7837053, -122.3959487], [37.7836661, -122.3959979], [37.7836358, -122.3960361], [37.7834257, -122.3963016], [37.7828646, -122.3970106], [37.7825562, -122.3974], [37.7820318, -122.3980622], [37.781794, -122.3983653], [37.7812257, -122.3990761], [37.7807911, -122.399635], [37.780354, -122.3991456], [37.7795605, -122.398188], [37.7790913, -122.3976147], [37.7787068, -122.3971451], [37.7782877, -122.3966077], [37.7781326, -122.3964122], [37.778029, -122.39627], [37.777803, -122.3959807], [37.7776755, -122.3958241], [37.777435, -122.3955214], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_860922a61e5af7b352ce6bb81f1f8b13.bindTooltip(
+                `<div>
+                     5th popular route. 55 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c34f8d220c9aefe9abb53fa335df8b20 = L.polyline(
+                [[37.7822848, -122.3926156], [37.7824725, -122.3928758], [37.7826581, -122.3931033], [37.7828345, -122.3933], [37.7830916, -122.39362], [37.7835224, -122.3941697], [37.7839556, -122.3947209], [37.7843129, -122.395178], [37.7847924, -122.3958014], [37.7849068, -122.3959442], [37.785549, -122.3967285], [37.7859666, -122.3972764], [37.7863375, -122.3977407], [37.7866371, -122.3980886], [37.786773, -122.3982588], [37.7868187, -122.3983161], [37.787221, -122.3988207], [37.7875911, -122.3992834], [37.7880116, -122.3998131], [37.7884407, -122.4003456], [37.7888257, -122.4008266], [37.7892837, -122.4013982], [37.7893209, -122.4013507], [37.7898869, -122.400635]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_c34f8d220c9aefe9abb53fa335df8b20.bindTooltip(
+                `<div>
+                     6th popular route. 64 - 77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_303334e218bfae278a07b18c9c92dd98 = L.polyline(
+                [[37.7944461, -122.3948315], [37.7937717, -122.3938776], [37.7932459, -122.3932061], [37.7922386, -122.3919522], [37.792, -122.3916518], [37.7923424, -122.3912179], [37.7907482, -122.3901483], [37.7894946, -122.3886184], [37.788788, -122.388213], [37.7870938, -122.3880152], [37.7847486, -122.3881985], [37.7818004, -122.3884317], [37.7812476, -122.3897575], [37.7806182, -122.3905436], [37.7801945, -122.3910808], [37.7797352, -122.3916622], [37.7792915, -122.392237], [37.7789107, -122.3927199], [37.7788654, -122.3927775], [37.7784485, -122.3933086], [37.7782417, -122.3935709], [37.7779827, -122.3939076], [37.7776753, -122.3942908], [37.7771538, -122.3949605], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_303334e218bfae278a07b18c9c92dd98.bindTooltip(
+                `<div>
+                     7th popular route. 74 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6d76da5db691972c9d5799ae47768c00 = L.polyline(
+                [[37.770331, -122.4035057], [37.7718329, -122.4016818], [37.7722454, -122.402204], [37.772489, -122.4025095], [37.7730665, -122.4032325], [37.7735489, -122.4038378], [37.7737427, -122.4040812], [37.7738352, -122.4041967], [37.773861, -122.4042294], [37.7739671, -122.4043623], [37.7740273, -122.4044363], [37.7742861, -122.404762], [37.774953, -122.4056016], [37.7751865, -122.4059015], [37.7752647, -122.4060019], [37.7755198, -122.406308], [37.7758255, -122.4066911], [37.7761446, -122.4070912], [37.7763152, -122.4073052], [37.7765198, -122.4075603], [37.7767525, -122.407854], [37.7769787, -122.4081365], [37.7779762, -122.409388], [37.7780255, -122.4094497], [37.7784197, -122.4099452], [37.7787847, -122.4104014], [37.7789126, -122.4105617], [37.7792109, -122.4109356], [37.7800112, -122.4119409], [37.7801611, -122.4121241], [37.7804523, -122.4124836], [37.7809085, -122.4119047], [37.7822065, -122.4103557], [37.7812048, -122.411717]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_6d76da5db691972c9d5799ae47768c00.bindTooltip(
+                `<div>
+                     8th popular route. 65 - 72
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6db3a15ac3e52893c496a4c7915f07d8 = L.polyline(
+                [[37.7898869, -122.400635], [37.7893209, -122.4013507], [37.7892837, -122.4013982], [37.7892449, -122.4014469], [37.7888178, -122.4019881], [37.7882801, -122.4015241], [37.78789, -122.401043], [37.7877045, -122.4008211], [37.7874553, -122.4005089], [37.787029, -122.3999959], [37.7866465, -122.3995184], [37.7862063, -122.3989843], [37.7858875, -122.3993791], [37.7850152, -122.4004778], [37.7848667, -122.400677], [37.7837862, -122.4020344], [37.7832509, -122.4027076], [37.7827119, -122.4020326], [37.782633, -122.4019328], [37.7824542, -122.401711], [37.7820463, -122.4012027], [37.7819738, -122.4011116], [37.7815816, -122.4006212], [37.7813871, -122.4003767], [37.7812114, -122.4001585], [37.7807911, -122.399635], [37.780354, -122.3991456], [37.7795605, -122.398188], [37.7790913, -122.3976147], [37.7787068, -122.3971451], [37.7782877, -122.3966077], [37.7781326, -122.3964122], [37.778029, -122.39627], [37.777803, -122.3959807], [37.7776755, -122.3958241], [37.777435, -122.3955214], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_6db3a15ac3e52893c496a4c7915f07d8.bindTooltip(
+                `<div>
+                     9th popular route. 77 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5b06acc8b27c06a9d9836e0410536dde = L.polyline(
+                [[37.7770727, -122.3950705], [37.7753545, -122.397239], [37.7759674, -122.3980041], [37.7765792, -122.3987844], [37.77702, -122.3993284], [37.7773873, -122.3997752], [37.7778095, -122.400319], [37.7790353, -122.401857], [37.7793233, -122.402198], [37.7794765, -122.402394], [37.779833, -122.4028541], [37.7800239, -122.4030932], [37.7802274, -122.4033538], [37.7802882, -122.403431], [37.7806966, -122.40394], [37.7810709, -122.4044118], [37.7814932, -122.4049417], [37.7815203, -122.404975], [37.7815465, -122.405008], [37.7819274, -122.4054875], [37.7823152, -122.4059505], [37.7825193, -122.4061893], [37.7827293, -122.4064956], [37.7831628, -122.4070277], [37.783295, -122.40719], [37.783532, -122.4074809], [37.7840127, -122.4080709]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_5b06acc8b27c06a9d9836e0410536dde.bindTooltip(
+                `<div>
+                     10th popular route. 69 - 39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0297935a71a34527fd899b011dbfb3ed = L.polyline(
+                [[37.770331, -122.4035057], [37.7718329, -122.4016818], [37.772906, -122.4003322], [37.7736207, -122.3994254], [37.7738534, -122.3991268], [37.7742199, -122.3986663], [37.7745241, -122.398284], [37.7747937, -122.3979451], [37.7753545, -122.397239], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_0297935a71a34527fd899b011dbfb3ed.bindTooltip(
+                `<div>
+                     11th popular route. 65 - 69
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_70dd635161f31c4be17ba36278f4a936 = L.polyline(
+                [[37.7956094, -122.39474], [37.7944973, -122.393666], [37.7943857, -122.3933637], [37.7943801, -122.3932488], [37.7960197, -122.3948018], [37.7967046, -122.3954399], [37.7992386, -122.3976846], [37.8009133, -122.399146], [37.8028464, -122.4008729], [37.80402, -122.4019308], [37.8042567, -122.4021755], [37.805123, -122.4033518], [37.8050417, -122.4034504], [37.8048548, -122.4031918]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_70dd635161f31c4be17ba36278f4a936.bindTooltip(
+                `<div>
+                     12th popular route. 50 - 60
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a46024eb0a7502eba08013198a2b796a = L.polyline(
+                [[37.7770727, -122.3950705], [37.7753545, -122.397239], [37.7747937, -122.3979451], [37.7745241, -122.398284], [37.7742199, -122.3986663], [37.7738534, -122.3991268], [37.7736207, -122.3994254], [37.772906, -122.4003322], [37.7718329, -122.4016818], [37.770331, -122.4035057]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_a46024eb0a7502eba08013198a2b796a.bindTooltip(
+                `<div>
+                     13th popular route. 69 - 65
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_47b8836c5513bbf30d8b032d87f6252c = L.polyline(
+                [[37.7765566, -122.4173867], [37.7765926, -122.4174627], [37.7765532, -122.4175125], [37.7765059, -122.4174506], [37.7760834, -122.4169233], [37.7757638, -122.4165267], [37.7756999, -122.4164474], [37.7752776, -122.4159234], [37.7748526, -122.4153843], [37.7744848, -122.4149212], [37.774043, -122.414368], [37.7737599, -122.4140134], [37.7736543, -122.4138812], [37.7728201, -122.4128343], [37.7727796, -122.4127831], [37.772073, -122.411897], [37.7718125, -122.4115703], [37.7715867, -122.4112871], [37.7710349, -122.4105923], [37.7710128, -122.4105648], [37.7706464, -122.4101111], [37.7703545, -122.4097443], [37.7695746, -122.4087677], [37.7692104, -122.4083342], [37.7692412, -122.4079015], [37.7694502, -122.406233], [37.769719, -122.4050419], [37.7697218, -122.4049953], [37.7697593, -122.4044507], [37.7697489, -122.4041365], [37.7697957, -122.4039775], [37.7697989, -122.4038475], [37.7699874, -122.4037668], [37.7700133, -122.40379], [37.7700362, -122.4038238], [37.770331, -122.4035057], [37.7718329, -122.4016818], [37.772906, -122.4003322], [37.7736207, -122.3994254], [37.7738534, -122.3991268], [37.7742199, -122.3986663], [37.7745241, -122.398284], [37.7747937, -122.3979451], [37.7753545, -122.397239], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_47b8836c5513bbf30d8b032d87f6252c.bindTooltip(
+                `<div>
+                     14th popular route. 67 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f2b3a3ef84473a74e7ad76ac3d61dd53 = L.polyline(
+                [[37.7870271, -122.3979372], [37.786773, -122.3982588], [37.7862063, -122.3989843], [37.7858875, -122.3993791], [37.7850152, -122.4004778], [37.7848667, -122.400677], [37.7837862, -122.4020344], [37.7832509, -122.4027076], [37.7827119, -122.4020326], [37.782633, -122.4019328], [37.7824542, -122.401711], [37.7820463, -122.4012027], [37.7819738, -122.4011116], [37.7815816, -122.4006212], [37.7813871, -122.4003767], [37.7812114, -122.4001585], [37.7807911, -122.399635], [37.780354, -122.3991456], [37.7795605, -122.398188], [37.7790913, -122.3976147], [37.7787068, -122.3971451], [37.7782877, -122.3966077], [37.7781326, -122.3964122], [37.778029, -122.39627], [37.777803, -122.3959807], [37.7776755, -122.3958241], [37.777435, -122.3955214], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_f2b3a3ef84473a74e7ad76ac3d61dd53.bindTooltip(
+                `<div>
+                     15th popular route. 63 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_987c41aba602d03ee1660535a133d1a8 = L.polyline(
+                [[37.7806182, -122.3905436], [37.7812476, -122.3897575], [37.7818004, -122.3884317], [37.781769, -122.3881323], [37.7847318, -122.3878962], [37.7855294, -122.3878344], [37.7870796, -122.3877083], [37.7870938, -122.3880152], [37.786927, -122.3887838], [37.7881515, -122.390321], [37.7888294, -122.3911647], [37.7893887, -122.3918607], [37.7898134, -122.3923953], [37.7901531, -122.392824], [37.7906148, -122.3934057], [37.7906563, -122.393457], [37.7911187, -122.3940348], [37.79123, -122.3941743], [37.7912828, -122.3942403], [37.7915273, -122.3945455], [37.7918524, -122.3949513], [37.7920623, -122.3952174], [37.7921016, -122.3952672], [37.7923155, -122.3955374], [37.7924773, -122.3957411], [37.7932761, -122.3963597], [37.7938135, -122.3956799], [37.7944461, -122.3948315]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_987c41aba602d03ee1660535a133d1a8.bindTooltip(
+                `<div>
+                     16th popular route. 61 - 74
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5a42c069474c193f22e00a2944dff694 = L.polyline(
+                [[37.3661001, -121.9400268]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_5a42c069474c193f22e00a2944dff694.bindTooltip(
+                `<div>
+                     17th popular route. 4 - 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_29bdec7d01349564d3f64fc3e5101b71 = L.polyline(
+                [[37.3891951, -122.0818053], [37.3897242, -122.081399], [37.3900189, -122.0812163], [37.3912252, -122.080483], [37.3911535, -122.080154], [37.3911306, -122.0801056], [37.3910605, -122.0799573], [37.390998, -122.0797926], [37.3908597, -122.0794282], [37.3911993, -122.0792131], [37.3913892, -122.0790929], [37.3917562, -122.0788605], [37.3921172, -122.078631], [37.3922218, -122.0785631], [37.3925456, -122.0783537], [37.3926281, -122.0783001], [37.3926677, -122.078274], [37.3928759, -122.0781643], [37.3930453, -122.0780788], [37.3933833, -122.077865], [37.3936099, -122.0777302], [37.3939842, -122.0774882], [37.3940232, -122.0774608], [37.3943095, -122.0772606], [37.3942638, -122.0771447], [37.3942033, -122.0769896]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_29bdec7d01349564d3f64fc3e5101b71.bindTooltip(
+                `<div>
+                     18th popular route. 27 - 28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f34438465dc266875731c72d3bb7b1dd = L.polyline(
+                [[37.7956094, -122.39474], [37.7944973, -122.393666], [37.7942594, -122.3932709], [37.7937194, -122.3926071], [37.7923424, -122.3912179], [37.7907482, -122.3901483], [37.7894946, -122.3886184], [37.788788, -122.388213], [37.7870938, -122.3880152], [37.7847486, -122.3881985], [37.7818004, -122.3884317], [37.7812476, -122.3897575], [37.7806182, -122.3905436], [37.7801945, -122.3910808], [37.7797352, -122.3916622], [37.7792915, -122.392237], [37.7789107, -122.3927199], [37.7788654, -122.3927775], [37.7784485, -122.3933086], [37.7782417, -122.3935709], [37.7779827, -122.3939076], [37.7776753, -122.3942908], [37.7771538, -122.3949605], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_f34438465dc266875731c72d3bb7b1dd.bindTooltip(
+                `<div>
+                     19th popular route. 50 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a0ab1bfdf6d18b97943a5ebe3e85f663 = L.polyline(
+                [[37.7920192, -122.3969055], [37.7911596, -122.3958251], [37.7906808, -122.3952251], [37.7903948, -122.3948748], [37.7902742, -122.3950568], [37.7896955, -122.3957322], [37.7889844, -122.3965831], [37.7885423, -122.396028], [37.788117, -122.395496], [37.7877231, -122.395005], [37.7873202, -122.394502], [37.7868664, -122.3939349], [37.7866418, -122.3936646], [37.7864394, -122.3935146], [37.7859393, -122.3931245], [37.785881, -122.3931978], [37.7857008, -122.393426], [37.7856475, -122.3934931], [37.7855792, -122.393579], [37.7855356, -122.393634], [37.7852059, -122.3940468], [37.784741, -122.3946383], [37.7846693, -122.3947257], [37.7846007, -122.3948121], [37.7845739, -122.3948457], [37.7845488, -122.3948776], [37.7845156, -122.3949199], [37.7843129, -122.395178], [37.7838907, -122.395714], [37.7837428, -122.3959014], [37.7837053, -122.3959487], [37.7836661, -122.3959979], [37.7836358, -122.3960361], [37.7834257, -122.3963016], [37.7828646, -122.3970106], [37.7825562, -122.3974], [37.7820318, -122.3980622], [37.781794, -122.3983653], [37.7812257, -122.3990761], [37.7807911, -122.399635], [37.780354, -122.3991456], [37.7795605, -122.398188], [37.7790913, -122.3976147], [37.7787068, -122.3971451], [37.7782877, -122.3966077], [37.7781326, -122.3964122], [37.778029, -122.39627], [37.777803, -122.3959807], [37.7776755, -122.3958241], [37.777435, -122.3955214], [37.7770727, -122.3950705]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+    
+            poly_line_a0ab1bfdf6d18b97943a5ebe3e85f663.bindTooltip(
+                `<div>
+                     20th popular route. 56 - 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_06fcaef70c93f71e18b57e82c19ca52a.addTo(map_3fb606bb285d5426d3bf9f95ed2e5fd4);
+        
+</script>
+</html>
