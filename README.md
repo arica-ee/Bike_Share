@@ -2,21 +2,21 @@
 
 ## -- Project Introduction --
 
-**Goal:** Optimize the bike-sharing system's profits  
+**Goal:** **Optimize** the profitability of the bike-sharing system
 
-**Description:** The project focused on analyzing the datasets of bike-sharing systems from August 29, 2013, to August 31, 2015. Me and the other two members analyze the user profile, bike unavailable frequency, and operational status.  
+**Description:** This project analyzes bike-sharing system datasets from August 29, 2013, to August 31, 2015. Me and the other two members analyze the **user profile**, **bike unavailable frequency**, and **operational status** to identify areas for improvement. 
 
-**Results:** Giving the strategy for fee adjustment mechanism and bike scheduling end up reducing 8% monthly cost.  
+**Results:** By implementing a fee-adjustment strategy and optimizing bike scheduling, we successfully **reduced monthly costs by 8%**. 
 
 **Skills:** data cleaning, data analysis, data visualization(EDA), geospatial visualizations.  
-**Technology:** Python, Excel, Pandas, Numpy, Seaborn, Matplotlib, Plotly, folium, Osmnx.  
+**Technology:** Python, Excel, Pandas, Numpy, Seaborn, Matplotlib, Plotly, Folium, Osmnx.  
 
-**Code:** bike_route.ipynb(only including the geo-map part, the other can refer to presentation doc.)  
+**Code(for geo-map analysis):** bike_route.ipynb
 **Final Presentation:** Bike-Share Analysis Project  
 
 ## -- Datasets Introduction -- 
 
-**Data Source:** https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share  
+**Data Source:** [Bike-Sharing Datasets](https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share "link")  
 
 **Context:**  The Bay Area Bike Share enables quick, easy, and affordable bike trips around the San Francisco Bay Area. They make regular open data releases (this dataset is a transformed version of the data from this link), plus maintain a real-time API.  
 
