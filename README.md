@@ -9,7 +9,7 @@
 **Results:** By implementing a fee-adjustment strategy and optimizing bike scheduling, we successfully **reduced monthly costs by 8%**. 
 
 **Skills:** data cleaning,  data analysis,  data visualization(EDA),  geospatial visualizations  
-**Technology:** Python,  Excel,  Pandas,  Numpy,  Seaborn,  Matplotlib,  Plotly,  Folium,  Osmnx.  
+**Technology:** Python,  Excel,  Pandas,  Numpy,  Seaborn,  Matplotlib,  Plotly,  Folium.  
 
 **Final Presentation:** ***Bike-Share Analysis Project.pdf***  
 **Geo-map analysis:** ***bike_route.ipynb*** or [***👉 Click here to view the map sample***](https://arica-ee.github.io/Bike_Share/hot_route_sample.html)  
