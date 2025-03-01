@@ -11,7 +11,7 @@
 **Skills:** data cleaning,  data analysis,  data visualization(EDA),  geospatial visualizations  
 **Technology:** Python,  Excel,  Pandas,  Numpy,  Seaborn,  Matplotlib,  Plotly,  Folium.  
 
-**Final Presentation:** ***Bike-Share Analysis Project.pdf***  
+**Final Presentation:** ***Bike-Share Analysis Project.pdf(https://drive.google.com/file/d/1WVkkI2cVtTMr7NgDc5z3l69mSrrPCp6q/view?usp=drive_link)***  
 **Geo-map analysis:** ***bike_route.ipynb*** or [***👉 Click here to view the map sample***](https://arica-ee.github.io/Bike_Share/hot_route_sample.html)  
 
 ## -- Datasets Introduction -- 
